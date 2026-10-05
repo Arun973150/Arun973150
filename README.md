@@ -3,10 +3,10 @@
 # Hi, I'm Arun 👋
 
 <a href="https://github.com/Arun973150">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=640&lines=Building+AI+security+tools;Detecting+AI-generated+images;Making+agents+that+operate+Windows;Measuring+before+claiming" alt="Building AI security tools, detecting AI-generated images, making agents that operate Windows" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=640&lines=Building+AI+agents;Shipping+end-to-end+ML+systems;Desktop+agents+that+operate+Windows;Multi-agent+LLM+pipelines" alt="Building AI agents, shipping end-to-end ML systems" />
 </a>
 
-AI/ML engineering student at **MSRIT, Bangalore**, working on AI security, computer vision, and agents.
+AI/ML engineering student at **MSRIT, Bangalore**, building **AI agents** and **end-to-end ML systems**.
 
 </div>
 
@@ -15,76 +15,81 @@ AI/ML engineering student at **MSRIT, Bangalore**, working on AI security, compu
 ### About me
 
 - 🔭 Currently building **[Meow](https://github.com/Arun973150/meow)**, a voice-driven desktop agent for Windows
-- 🛡️ Into AI-image detection, adversarial ML, and LLM red-teaming
+- 🤖 **Agents:** computer-use on the desktop, multi-agent LLM pipelines with LangGraph
+- ⚙️ **ML systems:** the full loop, from data pipeline and training to evaluation, serving, and edge deployment
 - 🧪 I like projects that end in a number I measured, not a claim
-- 🌱 Also explored medical imaging, edge AI on Raspberry Pi / ESP32, and LLMs for legacy COBOL
 
-### Featured projects
+### 🤖 Agents
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 #### 🐱 [Meow](https://github.com/Arun973150/meow)
-Voice-driven Windows desktop agent that sees your screen and operates apps with you.
+Voice-driven Windows desktop agent that hears you, sees your screen, and operates apps with you, asking before anything that matters.
 
 **Result:** finding UI controls through the accessibility tree scored **30/30**, vision scored **0/30**, across 6 apps.
 
-`Python` `Desktop agents` `UI Automation`
-
-</td>
-<td width="50%" valign="top">
-
-#### 🔍 [PikSign](https://github.com/Arun973150/detect)
-Detects Nano Banana and GPT-4o images, even after social-media recompression.
-
-**How:** DINOv2 + LoRA pixel experts and a Qwen2.5-VL semantic branch, fused at a 5% false-positive budget.
-
-`PyTorch` `Image forensics` `VLMs`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### 🛡️ [MIRAGE](https://github.com/Arun973150/stealth-II)
-Paper reproduction: invisible perturbations that make GPT-Image, Gemini, and Grok refuse to edit a protected photo.
-
-**How:** 8-model encoder ensemble, PGD with model dropout and secant gradient caching.
-
-`PyTorch` `Adversarial ML` `AI safety`
+`Python` `Computer use` `UI Automation`
 
 </td>
 <td width="50%" valign="top">
 
 #### 🔴 [Red Forge](https://github.com/Arun973150/RedForge)
-Multi-agent platform that tracks regulations and CVEs, maps them to compliance obligations, and red-teams LLMs.
+Five LangGraph agents (scanner → extractor → impact analyst → action planner → validator) that turn regulations and CVE feeds into prioritized tasks with deadlines.
 
-**Result:** HarmBench vs. Gemini 2.0 Flash, **99.8%** attack success (399/400).
+**Stack:** Gemini, FastAPI, Next.js, Neo4j, Qdrant, Postgres, Redis, deployed with Docker on AWS EC2.
 
-`LangGraph` `FastAPI` `Next.js`
+`LangGraph` `Multi-agent` `RAG`
+
+</td>
+</tr>
+</table>
+
+### ⚙️ ML systems
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🔍 [PikSign](https://github.com/Arun973150/detect)
+End-to-end detector for Nano Banana and GPT-4o images that survives social-media recompression.
+
+**How:** four DINOv2 + LoRA pixel experts, a DPO-tuned Qwen2.5-VL branch, and fusion calibrated at a 5% false-positive budget.
+
+`PyTorch` `LoRA / DPO` `VLMs`
+
+</td>
+<td width="50%" valign="top">
+
+#### 🌳 [VanRakshak](https://github.com/Arun973150/forest_monitor)
+Edge ML system for forests: hears gunshots and chainsaws, spots intruders, and reports over a LoRa mesh with no internet.
+
+**How:** on-device YOLO and MobileNetV2 audio on Raspberry Pi / ESP32, with a Neo4j Graph RAG agent for rangers.
+
+`Edge AI` `YOLO` `IoT`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-#### 🛰️ [MaterialX](https://github.com/Arun973150/MaterialX)
-AI pipeline that designs multilayer coatings hidden from radar, infrared, and visible detection.
+#### 🧠 [Sentinel Stroke](https://github.com/Arun973150/Stroke)
+Clinical stroke-lesion segmentation from MRI with two inference paths: a detect-then-segment cascade and an nnU-Net safety net.
 
-**Result:** **21 of 48** Pareto designs meet radar < −10 dB and IR emissivity < 0.3 (in simulation).
+**Data:** 1,715 subjects (TRACE/DWI, ADC, FLAIR), stratified 70/15/15 split, 5-fold nnU-Net ensemble.
 
-`NSGA-III` `Physics simulation` `Materials ML`
+`PyTorch` `nnU-Net` `Medical imaging`
 
 </td>
 <td width="50%" valign="top">
 
-#### 🌳 [VanRakshak](https://github.com/Arun973150/forest_monitor)
-Edge-AI forest monitoring that hears gunshots and chainsaws, spots intruders, and reports over a LoRa mesh.
+#### 🛰️ [MaterialX](https://github.com/Arun973150/MaterialX)
+AI pipeline from materials discovery to design: multilayer coatings hidden from radar, infrared, and visible detection.
 
-**How:** YOLO + MobileNetV2 audio on Raspberry Pi / ESP32, with a Neo4j Graph RAG assistant for rangers.
+**Result:** **21 of 48** Pareto designs meet radar < −10 dB and IR emissivity < 0.3 (in simulation).
 
-`Edge AI` `IoT` `YOLO`
+`NSGA-III` `Physics simulation` `Materials ML`
 
 </td>
 </tr>
@@ -94,12 +99,12 @@ Edge-AI forest monitoring that hears gunshots and chainsaws, spots intruders, an
 <summary><b>More projects</b></summary>
 <br>
 
-- 🧠 [**Sentinel Stroke**](https://github.com/Arun973150/Stroke): two-path stroke lesion segmentation from MRI (SegResNet cascade + nnU-Net safety net)
-- 🏦 [**COBOL Migration Hub**](https://github.com/Arun973150/java-migration): LLM pipeline that documents a mainframe COBOL codebase (44 programs, 447 business rules, 595 generated docs)
+- 🏦 [**COBOL Migration Hub**](https://github.com/Arun973150/java-migration): LangGraph + Gemini agents that document a mainframe COBOL codebase (44 programs, 447 business rules, 595 generated docs)
+- 🧾 [**Candidate Data Transformer**](https://github.com/Arun973150/8fold): data pipeline that merges candidate records from many sources into one profile with provenance and confidence
 - 🖼️ [**NTIRE 2026 AI-Image Detector**](https://github.com/Arun973150/ntire26-ai-image-detector): generalized detector trained on 20 open generators and tested on unseen ones like Nano Banana (DINOv3 + LoRA)
-- 🧾 [**Candidate Data Transformer**](https://github.com/Arun973150/8fold): merges messy candidate data from many sources into one profile with provenance and confidence
+- 🛡️ [**MIRAGE**](https://github.com/Arun973150/stealth-II): paper reproduction of image immunization that makes AI editors refuse to edit protected photos
 - 🎧 [**AeroMind**](https://github.com/Arun973150/aero_mind): earbud EEG monitoring for astronaut fatigue and neural anomalies
-- 🧪 [**PikSign Detect**](https://github.com/Arun973150/piksign_detect): FastAPI service and forensic UI (ELA, noise residuals, C2PA) for image manipulation detection
+- 🧪 [**PikSign Detect**](https://github.com/Arun973150/piksign_detect): FastAPI service and forensic UI for image manipulation detection
 
 </details>
 
@@ -110,12 +115,12 @@ Edge-AI forest monitoring that hears gunshots and chainsaws, spots intruders, an
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
   <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
   <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini" />
   <img src="https://img.shields.io/badge/vLLM-30A2FF?style=flat-square" alt="vLLM" />
+  <img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
   <img src="https://img.shields.io/badge/nnU--Net-555555?style=flat-square" alt="nnU-Net" />
   <img src="https://img.shields.io/badge/YOLO-00FFFF?style=flat-square&logoColor=black" alt="YOLO" />
 </p>
