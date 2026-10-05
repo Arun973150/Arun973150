@@ -35,12 +35,12 @@ Voice-driven Windows desktop agent that hears you, sees your screen, and operate
 </td>
 <td width="50%" valign="top">
 
-#### 🔴 [Red Forge](https://github.com/Arun973150/RedForge)
-Five LangGraph agents (scanner → extractor → impact analyst → action planner → validator) that turn regulations and CVE feeds into prioritized tasks with deadlines.
+#### 🏦 [COBOL Migration Hub](https://github.com/Arun973150/java-migration)
+LangGraph + Gemini agents that read a mainframe COBOL codebase and write its migration docs: business purpose, rules, risks, and complexity for every program.
 
-**Stack:** Gemini, FastAPI, Next.js, Neo4j, Qdrant, Postgres, Redis, deployed with Docker on AWS EC2.
+**Result:** AWS CardDemo fully documented: 44 programs, 447 business rules, 595 cross-linked docs, zero broken links.
 
-`LangGraph` `Multi-agent` `RAG`
+`LangGraph` `Legacy migration` `Neo4j`
 
 </td>
 </tr>
@@ -99,7 +99,7 @@ AI pipeline from materials discovery to design: multilayer coatings hidden from 
 <summary><b>More projects</b></summary>
 <br>
 
-- 🏦 [**COBOL Migration Hub**](https://github.com/Arun973150/java-migration): LangGraph + Gemini agents that document a mainframe COBOL codebase (44 programs, 447 business rules, 595 generated docs)
+- 🔴 [**Red Forge**](https://github.com/Arun973150/RedForge): five LangGraph agents that turn regulations and CVE feeds into prioritized compliance tasks (FastAPI, Next.js, Neo4j, Qdrant)
 - 🧾 [**Candidate Data Transformer**](https://github.com/Arun973150/8fold): data pipeline that merges candidate records from many sources into one profile with provenance and confidence
 - 🖼️ [**NTIRE 2026 AI-Image Detector**](https://github.com/Arun973150/ntire26-ai-image-detector): generalized detector trained on 20 open generators and tested on unseen ones like Nano Banana (DINOv3 + LoRA)
 - 🛡️ [**MIRAGE**](https://github.com/Arun973150/stealth-II): paper reproduction of image immunization that makes AI editors refuse to edit protected photos
